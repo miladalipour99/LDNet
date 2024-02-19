@@ -195,7 +195,7 @@ def res2net50_v1b_26w_4s(pretrained=False, **kwargs):
        # model_state = torch.load('/data2/zhangruifei/backbone/res2net50_v1b_26w_4s-3cf99910.pth')
         model_state = torch.load('/content/data2/zhangruifei/backbone/res2net50_v1b_26w_4s-3cf99910.pth')
         model.load_state_dict(model_state)
-        # lib.load_state_dict(model_zoo.load_url(model_urls['res2net50_v1b_26w_4s']))
+        lib.load_state_dict(model_zoo.load_url(model_urls['res2net50_v1b_26w_4s']))
     return model
 
 
