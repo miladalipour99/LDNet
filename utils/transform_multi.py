@@ -111,7 +111,7 @@ class RandomRotation(object):
         if random.random() < 0.5:
             angle = self.get_params(self.degrees)
             for k, v in data.items():
-                trans_data[k] = F.rotate(v, angle=angle, resample=self.resample, expand=self.expand, center=self.center)
+                trans_data[k] = F.rotate(v, angle=angle, expand=self.expand, center=self.center)
         else:
             trans_data = data
 
